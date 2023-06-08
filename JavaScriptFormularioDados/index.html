@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title> Formulário </title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  </head>
+<body>
+  <div id="area">
+    <form id="formulario" autocomplete="off">
+      <fieldset>
+        <legend>Formulário</legend> 
+
+        <label for="Nome" >Nome Completo: </label> 
+        <p></p>
+        <input class="campo_nome" type="text" onclick="Nome()"><br> 
+        <p></p>
+        <label for="Endereço" >Seu Endereço:</label>
+        <p></p>
+        <input class="campo_endereço" type="text" onclick="Endereço()"><br>
+        <p></p>
+        <label for="Email" >Digite seu E-mail:</label>
+        <p></p>
+        <input class="campo_email" type="text" onclick="Email()"><br>
+        <p></p>
+        <label for="ConfEmail" >Confirme seu E-mail:</label>
+        <p></p>
+        <input class="campo_nome" type="text" onblur="ConfEmail()"><br>
+        <p></p>
+        <label for="Senha" >Digite sua Senha:</label>
+        <p></p>
+        <input class="campo_senha" type="password" onclick="Senha()"><br>
+        <p></p>
+        <label for="ConfSenha" >Confirme sua Senha:</label>
+        <p></p>
+        <input class="campo_csenha" type="password" onclick="ConfSenha()"><br>
+        <p></p>
+        <input class="btn_submit" type="submit" value="Enviar" onclick="Enviar()">
+      </fieldset>
+    </form>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
