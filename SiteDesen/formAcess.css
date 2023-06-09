@@ -1,80 +1,88 @@
-
-
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #93c3f6;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1{
     text-align: center;
-    margin-top: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 0.5s ease-in-out forwards;
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1,
 h2 {
+    margin-top: 0;
     text-align: center;
-    margin-bottom: 20px;
+}
+
+.blue-text {
+    color: blue;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
 }
 
 label {
     display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #abd1f9;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
     text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #4CAF50;
-    color: #f3f0f0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    color: white;
+
 }
 
-.btn:hover {
-    background-color: #45a049;
+body {
+    background-image: url(img/fundo\ img\ formacess.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.divider {
-    text-align: center;
-    margin: 20px 0;
-    border-bottom: 1px solid #040000;
-    position: relative;
+.container {
+    background-color: #83BFFF;
+    color: #FFFFFF;
 }
 
-.divider:before {
-    content: "ou";
-    background-color: #93c3f6;
-    padding: 0 10px;
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #050000;
+.blue-text {
+    color: #2979FF;
 }
 
-body{
-    background-color: #abd1f9;
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    background-color: #FFFFFF;
 }
 
-input{
-    
+.btn {
+    background-color: #2979FF;
 }

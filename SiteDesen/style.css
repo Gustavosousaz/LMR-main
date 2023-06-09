@@ -59,10 +59,12 @@ header{
     margin-right: auto; 
 }
 
-.container {
-
-}
  
 body{
     background-color: #abd1f9;
+}
+
+carousel-item img {
+  height: 400px;
+  object-fit: cover;
 }
