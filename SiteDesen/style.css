@@ -1,70 +1,208 @@
-
-header{
-        background: #93c3f6;
-        width: 100%;
-      
- 
+.carousel-container {
+  width: 70%; /* Ajuste a largura desejada */
+  height: 300px; /* Ajuste a altura desejada */
+  margin: 0 auto;
 }
 
-#menuimg {
-    background: #fae8d2;
-    box-shadow: 4px 6px 12px rgba(0,0,0,0.4)
-  }
-  
-  .nav-item .active {
-    border-radius: 6px;
-    background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
-    box-shadow:  4px 4px 8px #ddc1a0,
-                 -4px -4px 8px #f7e5cc;
-  }
-  #menuimg .dropdown-menu a:hover {
-    color: #454545
-  }
 
-  #dropdown-item{
-    background-color: #00ff26;
-  }
-
-
-
-  #menuimg .nav-item {
-    margin : auto 4px;
-  }
-  #menuimg a {
-  
-    padding-left:12px;
-    padding-right:12px;
-  }
-  #menuimg .dropdown-menu {
-    background : #545454
-  }
-  a.navbar-brand {
-    color: #454545
-  }
-    
-    .nav-item .active {
-      border-radius: 10px;
-      background: linear-gradient(145deg, #00c8ff, #42d6ff);
-      box-shadow:  4px 4px 8px rgb(57, 163, 255),
-                   -4px -4px 8px #4acfff;
-    }
-
-
-    /* container  */
-
-    .container2 {
-        height: 50%;
-        width: 95%; 
-    margin-left: auto;
-    margin-right: auto; 
+.navbar-nav .nav-link {
+  color: #333; /* Cor do texto */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fonte do texto */
+  font-size: 15px; /* Tamanho da fonte */
+  text-transform: uppercase; /* Transformar o texto em maiúsculas */
+  padding: 10px 15px; /* Espaçamento interno dos menus */
+  transition: color 0.3s ease; /* Transição suave da cor */
 }
 
- 
-body{
-    background-color: #abd1f9;
+
+.navbar-nav .nav-link.active {
+  font-weight: bold; /* Estilo de texto em negrito para o menu ativo */
 }
 
-carousel-item img {
-  height: 400px;
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff; /* Cor do texto ao passar o mouse */
+}
+
+
+.navbar {
+ width: 100%; /* Defina a largura máxima do navbar */
+  margin: 0 auto; /* Centralize o navbar horizontalmente */
+}
+
+
+.navbar-nav .nav-link {
+  padding: 10px; /* Reduza o espaçamento interno dos itens da navbar */
+}
+
+.navbar-brand img {
+  max-height: 60px; /* Defina a altura máxima da logo */
+}
+
+
+
+/* Alterar cor de fundo do cabeçalho */
+header {
+  background-color: #f8f8f8;
+}
+
+/* Alterar cor do título do herói */
+.hero-title {
+  color: #333;
+}
+
+/* Alterar tamanho da fonte dos serviços */
+.service-title {
+  font-size: 20px;
+}
+
+/* Alterar cor do botão */
+.btn {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Alterar estilo do formulário de contato */
+.contact-form input,
+.contact-form textarea {
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* Estilo para o menu */
+#Menuimg {
+  background-color: #007BFF; 
+  color: #FFF;
+}
+
+/* Estilo para o resto da página */
+body {
+  background-color: #F8F9FA; 
+}
+          /* 
+          eventos - depoimentos */
+          .section-title.text-center {
+  text-align: center;
+}
+
+
+/* 
+eventos */
+.event {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.event-title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.event-description {
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* 
+opinião clientes */
+.testimonial {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   object-fit: cover;
+  margin: 0 auto;
 }
+
+.testimonial-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  margin-top: 10px;
+}
+
+/* Estilização do container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.section-about {
+  padding: 40px 0;
+  text-align: center; /* Alinha o conteúdo no centro horizontalmente */
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-description {
+  margin-bottom: 10px;
+}
+
+.section-image {
+  border-radius: 5%;
+  max-width: 70%;
+  height: 100%;
+}
+
+.custom-bg-color {
+  background-color: #dddddd; /* Cor de fundo personalizada */
+}
+
+
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.container {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin: 0;
+}
+
