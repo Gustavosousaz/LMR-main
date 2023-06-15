@@ -6,7 +6,7 @@
 
 
 .navbar-nav .nav-link {
-  color: #333; /* Cor do texto */
+  color: #eeeeee; /* Cor do texto */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Fonte do texto */
   font-size: 15px; /* Tamanho da fonte */
   text-transform: uppercase; /* Transformar o texto em maiúsculas */
@@ -21,7 +21,7 @@
 
 
 .navbar-nav .nav-link:hover {
-  color: #ffffff; /* Cor do texto ao passar o mouse */
+  color: #00aaf8; /* Cor do texto ao passar o mouse */
 }
 
 
@@ -46,7 +46,7 @@ header {
   background-color: #f8f8f8;
 }
 
-/* Alterar cor do título do herói */
+/* Alterar cor do título do nav-bar */
 .hero-title {
   color: #333;
 }

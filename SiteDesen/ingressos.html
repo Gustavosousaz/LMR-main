@@ -10,20 +10,53 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <!--- Navbar --->
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary" id="Menuimg">
             <div class="container">
-              <a class="navbar-logo" href="#">
-                <img src="logo.png" alt="Eventim">
-              </a>
-              <ul class="navbar-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="FormularioAcess.html">Entrar / Criar conta</a></li>
-                <li><a href="Contato.html">Contato</a></li>
-              </ul>
+                <a class="navbar-brand" href="#"><img src="img/cinema-movie-ticket-on-transparent-background-free-png.webp" height="60" /></a>
+                <div class="navbar-text">
+                    <h1><font color="white">Blue</font></h1>
+                    <h2><font color="white">Street</font></h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="Contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="ingressos.html">Ingressos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="FormularioAcess.html">Entrar / Criar conta</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Encontrar Eventos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Todos os eventos</a></li>
+                                <li><a class="dropdown-item" href="cidades.html">Todas as Cidades</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-          
+        </nav>
     </header>
+    
+    
+    
+
 
     <section class="section">
         <div class="container">
