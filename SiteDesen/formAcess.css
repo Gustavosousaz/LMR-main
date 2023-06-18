@@ -1,4 +1,4 @@
-.container {
+.container2 {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
@@ -24,10 +24,6 @@ h1,
 h2 {
     margin-top: 0;
     text-align: center;
-}
-
-.blue-text {
-    color: blue;
 }
 
 .form-group {
@@ -69,8 +65,8 @@ body {
     background-size: cover;
 }
 
-.container {
-    background-color: #83BFFF;
+.container2 {
+    
     color: #FFFFFF;
 }
 

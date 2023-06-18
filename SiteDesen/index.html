@@ -19,13 +19,22 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
+    <link rel="stylesheet" type="text/css" href="lembretes.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+    <!-- Lembrete mensagem pre configurada -->
+    <div id="mensagem" class="mensagem">
+        <img src="img/gifmensage.gif" alt="GIF" class="gif">
+        <div class="conteudo">
+          <div class="titulo">Bem-vindo ao BlueStreet site de vendas de ingressos de eventos!</div>
+          <p>Encontre os melhores eventos e garanta seu ingresso com facilidade.</p>
+          <button onclick="desativarMensagem()">Fechar</button>
+        </div>
+      </div>
+      <script src="lembretes.js"></script>
     <!-- Menu principal  -->
     <header>
         <!--- Navbar --->
@@ -47,7 +56,7 @@
                 <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item">
-                            <a class="nav-link mx-2 active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link mx-2 active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-2" href="Contato.html">Contato</a>
@@ -60,19 +69,22 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Encontrar Eventos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Todos os eventos</a></li>
-                                <li><a class="dropdown-item" href="cidades.html">Todas as Cidades</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Encontrar Eventos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#ing1">Festas e shows</a></li>
+                            <li><a class="dropdown-item" href="#ing2">Congressos e palestras</a></li>
+                            <li><a class="dropdown-item" href="#ing3">Teatro e stand up</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
+
+
     <p></p>
     <div class="header2">
         <!-- Container de imagens com dois carrosséis independentes -->
@@ -130,29 +142,29 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                     </div>
                 </div>
                 <!-- Segundo carrossel -->
-                <<div class="col">
+                <div class="col">
                     <div id="carouselExampleAutoplaying2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/imghome1.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome8.jpeg" class="d-block h-25 w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/imghome2.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome9.webp" class="d-block h-25 w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/imghome3.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome10.jpeg" class="d-block h-25 w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/imghome4.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome11.jpeg" class="d-block h-25 w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/imghome5.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome12.webp" class="d-block h-25 w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/imghome6.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome13.webp" class="d-block h-25 w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/imghome7.jpg" class="d-block h-25 w-100" alt="...">
+                                <img src="img/imghome14.webp" class="d-block h-25 w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button"
@@ -175,8 +187,8 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
 
     <!-- cartoes de ingressos / eventos -->
     <section class="p2">
-        <div class="container">
-            <h1>Festas e shows</h1>
+        <div class="container" id="ing1" >
+            <h1>Festas e shows </h1>
             <div class="row">
                 <div class="col-2">
                     <div class="card">
@@ -232,24 +244,26 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
 
                 <div class="col-2">
                     <div class="card">
-                        <img src="img/ingressos/img4.jpeg" class="card-img-top" alt="...">
+                        <img src="img/ingressos/img5.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">MELIM</h5>
-                            <p class="card-text">Sábado às 20h00, Domingo às 19h00
+                            <h5 class="card-title">SIDNEY MAGAL - BAILE DO MAGAL</h5>
+                            <p class="card-text">Sábado às 21h30
 
-                                10 a 11 de Junho.</p>
+                                22 de Julho
+
+                               </p>
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card">
-                        <img src="img/ingressos/img4.jpeg" class="card-img-top" alt="...">
+                        <img src="img/ingressos/img6.webp" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">MELIM</h5>
-                            <p class="card-text">Sábado às 20h00, Domingo às 19h00
+                            <h5 class="card-title">TIAGO IORC turnê : “DARAMÔ”</h5>
+                            <p class="card-text">Sexta às 22h00
 
-                                10 a 11 de Junho.</p>
+                                28 de Julho</p>
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
@@ -259,51 +273,51 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                     <div class="row">
                         <div class="col-2">
                             <div class="card">
-                                <img src="img/ingressos/img1.webp" class="card-img-top img-fluid" alt="...">
+                                <img src="img/ingressos/img7.webp" class="card-img-top img-fluid" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">LÉO PAIN - 12/06/23
+                                    <h5 class="card-title">Chico Chico
                                         ㅤ
                                         ㅤㅤ
                                     </h5>
-                                    <p class="card-text">Segunda às 21h00
-
-                                        12 de Junho.</p>
-                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="card">
-                                <img src="img/ingressos/img2.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">STEVE HACKETT AND THE GENETICS</h5>
                                     <p class="card-text">Sexta às 22h00
 
-                                        18 de Agosto.</p>
+                                        21 de Julho</p>
                                     <a href="#" class="btn btn-primary">Comprar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
-                                <img src="img/ingressos/img3.webp" class="card-img-top" alt="...">
+                                <img src="img/ingressos/img8.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">NOVA GERAÇÃO BRAVO METAL FEST</h5>
-                                    <p class="card-text">Sexta às 19h00
+                                    <h5 class="card-title">Zé Ibarra</h5>
+                                    <p class="card-text">Sexta às 22h00
 
-                                        7 de Julho.</p>
+                                        18 de Agosto</p>
                                     <a href="#" class="btn btn-primary">Comprar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
-                                <img src="img/ingressos/img4.jpeg" class="card-img-top" alt="...">
+                                <img src="img/ingressos/img9.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">MELIM</h5>
-                                    <p class="card-text">Sábado às 20h00, Domingo às 19h00
+                                    <h5 class="card-title">SHOW PADRE FÁBIO DE MELLO</h5>
+                                    <p class="card-text">Sexta às 21h30
 
-                                        10 a 11 de Junho.</p>
+                                        11 de Agosto</p>
+                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card">
+                                <img src="img/ingressos/img12.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">BAILE EMO :: OPEN BAR :: CEDO OU AFTER :: 23/06</h5>
+                                    <p class="card-text">Sexta às 23h00
+
+                                        23 de Junho.</p>
                                     <a href="#" class="btn btn-primary">Comprar</a>
                                 </div>
                             </div>
@@ -311,31 +325,31 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
 
                         <div class="col-2">
                             <div class="card">
-                                <img src="img/ingressos/img4.jpeg" class="card-img-top" alt="...">
+                                <img src="img/ingressos/img13.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">MELIM</h5>
-                                    <p class="card-text">Sábado às 20h00, Domingo às 19h00
+                                    <h5 class="card-title">KLB 20+2 EXPERIENCE</h5>
+                                    <p class="card-text">Sexta às 21h00
 
-                                        10 a 11 de Junho.</p>
+                                        1 de Setembro</p>
                                     <a href="#" class="btn btn-primary">Comprar</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-2">
                             <div class="card">
-                                <img src="img/ingressos/img4.jpeg" class="card-img-top" alt="...">
+                                <img src="img/ingressos/img14.webp" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">MELIM</h5>
-                                    <p class="card-text">Sábado às 20h00, Domingo às 19h00
+                                    <h5 class="card-title">ANAVITÓRIA Turnê dos Namorados</h5>
+                                    <p class="card-text">Domingo às 20h00
 
-                                        10 a 11 de Junho.</p>
+                                        18 de Junho</p>
                                     <a href="#" class="btn btn-primary">Comprar</a>
                                 </div>
                             </div>
                         </div>
                         <p></p>
                         <!-- cartao2 -->
-                        <div class="container">
+                        <div class="container" id="ing2">
                             <h1>Congressos e palestras</h1>
                             <div class="row">
                                 <div class="col-2">
@@ -399,12 +413,12 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                 </div>
                                 <div class="col-2">
                                     <div class="card">
-                                        <img src="img/ingressos/img8.jpg" class="card-img-top" alt="...">
+                                        <img src="img/ingressos/img25.webp" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Encontro de Negócios - Zona Norte</h5>
-                                            <p class="card-text">20 jun - 2023 • 10:00 > 20 jun - 2023 • 13:00
+                                            <h5 class="card-title">TIAGO BRUNET – NOITE DE DESTINO</h5>
+                                            <p class="card-text">Sábado às 21h00
 
-                                                .</p>
+                                                12 de Agosto</p>
                                             <a href="#" class="btn btn-primary">Comprar</a>
                                         </div>
                                     </div>
@@ -414,37 +428,14 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                     <div class="row">
                                         <div class="col-2">
                                             <div class="card">
-                                                <img src="img/ingressos/img5.png" class="card-img-top" alt="...">
+                                                <img src="img/ingressos/img6.png" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Fórum PRECARGA 2023
+                                                    <h5 class="card-title">BTFF Conference - 2023
 
 
                                                     </h5>
-                                                    <p class="card-text">19 set - 2023 • 12:00 > 20 set - 2023 • 19:00
+                                                    <p class="card-text">19 set - 2023 • 12:00 > 20 set - 2023 • 19:0025 nov - 2023 • 07:40 > 26 nov - 2023 • 17:00
 
-                                                        .</p>
-                                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="card">
-                                                <img src="img/ingressos/img6.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">CONEXÃO MULHER STAR</h5>
-                                                    <p class="card-text">03 jun - 2023 • 18:30 > 03 jun - 2023 • 22:30
-
-                                                        .</p>
-                                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="card">
-                                                <img src="img/ingressos/img7.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Visite o Palazzo Verde (1h)</h5>
-                                                    <p class="card-text">18 jun - 2023 • 14:00 > 18 jun - 2023 • 15:00.
                                                     </p>
                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                 </div>
@@ -452,22 +443,11 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                         </div>
                                         <div class="col-2">
                                             <div class="card">
-                                                <img src="img/ingressos/img8.jpg" class="card-img-top" alt="...">
+                                                <img src="img/ingressos/img9.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Encontro de Negócios - Zona Norte</h5>
-                                                    <p class="card-text">20 jun - 2023 • 10:00 > 20 jun - 2023 • 13:00
+                                                    <h5 class="card-title">Prêmio Latam 2023</h5>
+                                                    <p class="card-text">03 jun - 2023 • 18:30 > 03 jun - 2023 • 22:3029 jun - 2023 • 18:00 > 29 jun - 2023 • 22:00
 
-                                                        .</p>
-                                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-2">
-                                            <div class="card">
-                                                <img src="img/ingressos/img7.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Visite o Palazzo Verde (1h)</h5>
-                                                    <p class="card-text">18 jun - 2023 • 14:00 > 18 jun - 2023 • 15:00.
                                                     </p>
                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                 </div>
@@ -475,18 +455,54 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                         </div>
                                         <div class="col-2">
                                             <div class="card">
-                                                <img src="img/ingressos/img8.jpg" class="card-img-top" alt="...">
+                                                <img src="img/ingressos/img7.png" class="card-img-top" alt="...">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Encontro de Negócios - Zona Norte</h5>
-                                                    <p class="card-text">20 jun - 2023 • 10:00 > 20 jun - 2023 • 13:00
+                                                    <h5 class="card-title">EXPOGESTÃO PLAY 2023</h5>
+                                                    <p class="card-text">27 jun - 2023 • 13:30 > 29 jun - 2023 • 20:00
 
-                                                        .</p>
+ 
+                                                    </p>
+                                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card">
+                                                <img src="img/ingressos/img10.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">N EXPERIENCE - 2ª EDICÃO</h5>
+                                                    <p class="card-text">26 ago - 2023 • 08:00 > 26 ago - 2023 • 14:30
+
+                                                    </p>
+                                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card">
+                                                <img src="img/ingressos/img8.png" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Congresso MEDVET EXPERIENCE - 5 Especialidades Veterinárias</h5>
+                                                    <p class="card-text">14 jun - 2023 • 08:00 > 16 jun - 2023 • 21:00
+                                                    </p>
+                                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="card">
+                                                <img src="img/ingressos/img11.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Tudo que nóis tem é nóis". Saúde mental uma encruzilhada entre o técnico, o (PO)ético e o político.</h5>
+                                                    <p class="card-text">07 jul - 2023 • 12:00 > 09 jul - 2023 • 13:00
+
+                                                    </p>
                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <!-- cartao3 -->
-                                        <div class="container">
+                                        <div class="container" id="ing3">
                                             <h1>Peças de teatro e stand up comedy</h1>
                                             <div class="row">
                                                 <div class="col-2">
@@ -507,13 +523,13 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                                 </div>
                                                 <div class="col-2">
                                                     <div class="card">
-                                                        <img src="img/ingressos/img10.webp" class="card-img-top"
+                                                        <img src="img/ingressos/img15.webp" class="card-img-top"
                                                             alt="...">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Stand-up Leo Lins</h5>
-                                                            <p class="card-text">Domingo às 18h00 e 20h00
+                                                            <h5 class="card-title">VICTOR SARRO EM "A QUINTA SÉRIE AINDA VIVE"</h5>
+                                                            <p class="card-text">Quinta às 20h00
 
-                                                                2 de Julho.</p>
+                                                                6 de Julho</p>
                                                             <a href="#" class="btn btn-primary">Comprar</a>
                                                         </div>
                                                     </div>
@@ -533,45 +549,39 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                                 </div>
                                                 <div class="col-2">
                                                     <div class="card">
-                                                        <img src="img/ingressos/img12.jpeg" class="card-img-top"
+                                                        <img src="img/ingressos/img16.webp" class="card-img-top"
                                                             alt="...">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">CASA DA COMÉDIA CARIOCA - COMÉDIA COM
-                                                                PAGODE:
-                                                                com
-                                                                Dinho Machado</h5>
-                                                            <p class="card-text">Sábado às 19h30
+                                                            <h5 class="card-title">Sergio Mallandro.</h5>
+                                                            <p class="card-text">Sábado às 22h30
 
-                                                                24 de Junho.</p>
+                                                                8 a 29 de Julho</p>
                                                             <a href="#" class="btn btn-primary">Comprar</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2">
                                                     <div class="card">
-                                                        <img src="img/ingressos/img11.webp" class="card-img-top"
+                                                        <img src="img/ingressos/img17.webp" class="card-img-top"
                                                             alt="...">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">MARK JAM | TRIBUTO CURE O MUNDO</h5>
-                                                            <p class="card-text">Domingo às 18h00
+                                                            <h5 class="card-title">DEIVE LEONARDO - A RESPOSTA - 24/08/23</h5>
+                                                            <p class="card-text">Quinta às 20h00
 
-                                                                6 de Agosto.</p>
+                                                                24 de Agosto</p>
                                                             <a href="#" class="btn btn-primary">Comprar</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-2">
                                                     <div class="card">
-                                                        <img src="img/ingressos/img12.jpeg" class="card-img-top"
+                                                        <img src="img/ingressos/img18.webp" class="card-img-top"
                                                             alt="...">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">CASA DA COMÉDIA CARIOCA - COMÉDIA COM
-                                                                PAGODE:
-                                                                com
-                                                                Dinho Machado</h5>
-                                                            <p class="card-text">Sábado às 19h30
+                                                            <h5 class="card-title">GAROTOS PODRES & CÓLERA - 22/10/23</h5>
+                                                            <p class="card-text">Domingo às 19h00
 
-                                                                24 de Junho.</p>
+                                                                22 de Outubro</p>
                                                             <a href="#" class="btn btn-primary">Comprar</a>
                                                         </div>
                                                     </div>
@@ -580,92 +590,77 @@ Os botões de controle do carrossel foram definidos com as classes carousel-cont
                                                     <div class="row">
                                                         <div class="col-2">
                                                             <div class="card">
-                                                                <img src="img/ingressos/img9.jpeg" class="card-img-top"
+                                                                <img src="img/ingressos/img19.webp" class="card-img-top"
                                                                     alt="...">
                                                                 <div class="card-body">
-                                                                    <h5 class="card-title">STAND UP - MARCUS CIRILLO EM
-                                                                        É POR
-                                                                        ISSO QUE
-                                                                        EU BEBO
+                                                                    <h5 class="card-title">VIANOVA Missão dos Viajantes
                                                                     </h5>
+                                                                    <p class="card-text">Sexta 17h ás 22h | Sábado e Domingo 10h ás 22h</p>
+                                                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="card">
+                                                                <img src="img/ingressos/img20.webp" class="card-img-top"
+                                                                    alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">FÁBIO JR - 21/07/23</h5>
+                                                                    <p class="card-text">Sexta às 21h30
+
+                                                                        21 de Julho</p>
+                                                                    <a href="#" class="btn btn-primary">Comprar</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class="card">
+                                                                <img src="img/ingressos/img21.webp" class="card-img-top"
+                                                                    alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">RODRIGO MARQUES - ESTAMOS VIVOS</h5>
                                                                     <p class="card-text">Sábado às 21h00
 
-                                                                        2 de Setembro.</p>
+                                                                        24 de Junho</p>
                                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-2">
                                                             <div class="card">
-                                                                <img src="img/ingressos/img10.webp" class="card-img-top"
+                                                                <img src="img/ingressos/img22.webp" class="card-img-top"
                                                                     alt="...">
                                                                 <div class="card-body">
-                                                                    <h5 class="card-title">Stand-up Leo Lins</h5>
-                                                                    <p class="card-text">Domingo às 18h00 e 20h00
+                                                                    <h5 class="card-title">“Julius Caesar – Vidas Paralelas”</h5>
+                                                                    <p class="card-text">Quinta, Sexta e Sábado às 20h00, Domingo às 19h00
 
-                                                                        2 de Julho.</p>
+                                                                        16 a 25 de Junho.</p>
                                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-2">
                                                             <div class="card">
-                                                                <img src="img/ingressos/img11.webp" class="card-img-top"
+                                                                <img src="img/ingressos/img23.webp" class="card-img-top"
                                                                     alt="...">
                                                                 <div class="card-body">
-                                                                    <h5 class="card-title">MARK JAM | TRIBUTO CURE O
-                                                                        MUNDO</h5>
-                                                                    <p class="card-text">Domingo às 18h00
+                                                                    <h5 class="card-title">O Mágico de Oz</h5>
+                                                                    <p class="card-text">Sábado às 17h30
 
-                                                                        6 de Agosto.</p>
+                                                                        17 de Junho a 29 de Julho</p>
                                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-2">
                                                             <div class="card">
-                                                                <img src="img/ingressos/img12.jpeg" class="card-img-top"
+                                                                <img src="img/ingressos/img24.webp" class="card-img-top"
                                                                     alt="...">
                                                                 <div class="card-body">
-                                                                    <h5 class="card-title">CASA DA COMÉDIA CARIOCA -
-                                                                        COMÉDIA COM
-                                                                        PAGODE:
-                                                                        com
-                                                                        Dinho Machado</h5>
-                                                                    <p class="card-text">Sábado às 19h30
+                                                                    <h5 class="card-title">BRUNA LOUISE EM BH - STAND UP COMEDY: BURNOUT</h5>
+                                                                    <p class="card-text">Terça às 20h30, Domingo às 15h00, 18h00 e 21h00
 
-                                                                        24 de Junho.</p>
-                                                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <div class="card">
-                                                                <img src="img/ingressos/img11.webp" class="card-img-top"
-                                                                    alt="...">
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">MARK JAM | TRIBUTO CURE O
-                                                                        MUNDO</h5>
-                                                                    <p class="card-text">Domingo às 18h00
-
-                                                                        6 de Agosto.</p>
-                                                                    <a href="#" class="btn btn-primary">Comprar</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <div class="card">
-                                                                <img src="img/ingressos/img12.jpeg" class="card-img-top"
-                                                                    alt="...">
-                                                                <div class="card-body">
-                                                                    <h5 class="card-title">CASA DA COMÉDIA CARIOCA -
-                                                                        COMÉDIA COM
-                                                                        PAGODE:
-                                                                        com
-                                                                        Dinho Machado</h5>
-                                                                    <p class="card-text">Sábado às 19h30
-
-                                                                        24 de Junho.</p>
+                                                                        2 a 4 de Julho</p>
                                                                     <a href="#" class="btn btn-primary">Comprar</a>
                                                                 </div>
                                                             </div>

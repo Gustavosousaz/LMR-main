@@ -1,0 +1,47 @@
+.mensagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffffb4;
+  border: 1px solid #5900ff;
+  border-radius: 4px;
+  padding: 8px;
+  width: 320px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #000000;
+  z-index: 9999; /* Defina um valor alto para colocar a caixa acima dos outros elementos */
+}
+
+
+.conteudo {
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.gif {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 125px;
+  border-radius: 5%;
+}
